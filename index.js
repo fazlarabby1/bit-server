@@ -15,6 +15,11 @@ app.get('/get_name',(req, res)=>{
     res.send(users);
 })
 
+app.post('/save_user', (req, res)=>{
+    const newUser = req.body;
+    res.send(users);
+})
+
 
 app.listen(port, ()=>{
     console.log(`Bit server running on port ${port}`)
